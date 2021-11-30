@@ -11,4 +11,8 @@ import com.mind.market.notes.feature_note.domain.model.Note
 
 abstract class NoteDatabase() : RoomDatabase() {
     abstract val noteDao: INoteDao
+
+    companion object {
+        const val DATABASE_NAME = "notes_db"
+    }
 }
