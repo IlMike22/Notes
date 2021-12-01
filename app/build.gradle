@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.mind.market.notes"
@@ -61,6 +61,8 @@ dependencies {
     implementation 'androidx.room:room-common:2.3.0'
     implementation 'androidx.room:room-ktx:2.3.0'
     implementation("com.google.dagger:hilt-android:2.38.1")
+    implementation 'androidx.navigation:navigation-runtime-ktx:2.3.5'
+    implementation("androidx.navigation:navigation-compose:2.4.0-beta02")
     testImplementation 'junit:junit:4.+'
     kapt("com.google.dagger:hilt-android-compiler:2.38.1")
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
